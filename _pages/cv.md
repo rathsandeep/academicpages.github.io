@@ -11,49 +11,67 @@ redirect_from:
 
 Education
 ======
-* B.S. in Github, Github University, 2012
-* M.S. in Jekyll, Github University, 2014
-* Ph.D in Version Control Theory, Github University, 2018 (expected)
+* Ph.D in Management, UCLA Anderson School of Management, 2016
+* M.Tech. in Instrumentation Engineering, Indian Institute of Technology, Kharagpur, India, 2006
+* B.Tech. in Electrical Engineering, Indian Institute of Technology, Kharagpur, India, 2006
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2016-Present: Assistant Professor
+  * Kenan-Flagler Business School, University of North Carolina, Chapel Hill
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+
+* 2012-2016: Teaching Assistant
+  * UCLA Anderson School of Management, Los Angeles
+
+* 2010-2011 Research Associate
+  * Indian School of Business, Hyderabad, India
+
+* 2009-2010 Business Analyst
+  * Schlumberger Ltd., Pune, India
+
+* 2008-2009 Manufacturing Engineer
+  * Schlumberger Ltd., Paris, Houston
+
+
+Honors
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* 2015 - 2016, UCLA Dissertation Year Fellowship
+* 2011 - 2015, UCLA Anderson Doctoral Fellowship
+* 2005-2006, Fellowship for Post Graduate Studies, Ministry of Human Resource Development,
+Government of India
+* 1999-2005, National Talent Search Examination Scholarship, National Council of Educational
+Research and Training, Government of India
+
 
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
+
 Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* To the discipline
+  * Ad-Hoc Reviewer
+    * Manufacturing & Service Operations Management
+  * Judge
+    * POMS CHOM Best Paper Competition, 2017
+  * Session Chair
+    * INFORMS Annual Meetings 2015, 2017
+    * INFORMS Healthcare 2015
+Memberships
+======
+2012 - Present, Member, Institute for Operations Research and Management Science (INFORMS)
