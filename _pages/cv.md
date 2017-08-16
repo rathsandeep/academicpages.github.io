@@ -72,6 +72,7 @@ Service and leadership
   * Session Chair
     * INFORMS Annual Meetings 2015, 2017
     * INFORMS Healthcare 2015
+    
 Memberships
 ======
 2012 - Present, Member, Institute for Operations Research and Management Science (INFORMS)
