@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 <html>
-<li><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id={{ author.ssrn }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> SSRN</a></li>
+<li><a href="{{ base_path }}/files/sandeep_rath_resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> SSRN</a></li>
 </html>
 
 
