@@ -11,6 +11,8 @@ redirect_from:
 <html>
 <li><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id={{ author.ssrn }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> SSRN</a></li>
 </html>
+
+
 Education
 ======
 * Ph.D in Management, UCLA Anderson School of Management, 2016
