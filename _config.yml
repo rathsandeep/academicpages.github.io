@@ -268,7 +268,8 @@ whitelist:
   - jekyll-feed
   - jemoji
 
-
+plugins:
+  - jekyll-seo-tag
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
