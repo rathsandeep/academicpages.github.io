@@ -62,9 +62,9 @@ Talks
 
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  * Undergraduate Teaching
+    * Service Operations Management, 2018 *(scheduled)*
+    * Operations Management, 2017, 2018 *(scheduled)*
 
 Service and leadership
 ======
