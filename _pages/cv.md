@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV li><a href="{{ base_path }}/files/sandeep_rath_resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF Version</a></li>"
+title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 <html>
-<li><a href="{{ base_path }}/files/sandeep_rath_resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF Version</a></li>
+<a href="{{ base_path }}/files/sandeep_rath_resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF Version</a>
 </html>
 
 
