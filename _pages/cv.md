@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{% include files/sandeep_rath_resume.pdf %}
+{% include base_path %}
 
 Education
 ======

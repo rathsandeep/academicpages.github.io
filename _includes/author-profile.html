@@ -109,6 +109,9 @@
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> Wikipedia</a></li>
       {% endif %}
+      {% if author.ssrn %}
+        <li><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id={{ author.ssrn }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> SSRN</a></li>
+      {% endif %}
     </ul>
   </div>
 </div>
