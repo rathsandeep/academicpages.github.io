@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "CV li><a href="{{ base_path }}/files/sandeep_rath_resume.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> PDF Version</a></li>"
 permalink: /cv/
 author_profile: true
 redirect_from:
