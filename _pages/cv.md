@@ -9,10 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-<li><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id={{ author.ssrn }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> SSRN</a></li>
+
 
 Education
 ======
+<li><a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id={{ author.ssrn }}"><i class="fa fa-fw fa-chain" aria-hidden="true"></i> SSRN</a></li>
 * Ph.D in Management, UCLA Anderson School of Management, 2016
 * M.Tech. in Instrumentation Engineering, Indian Institute of Technology, Kharagpur, India, 2006
 * B.Tech. in Electrical Engineering, Indian Institute of Technology, Kharagpur, India, 2006
