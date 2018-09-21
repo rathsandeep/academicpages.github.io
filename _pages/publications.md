@@ -11,6 +11,7 @@ author_profile: true
 
 {% include base_path %}
 
+# Peer Reviewed Journal Articles
 {% for post in site.publications reversed %}
   {% include archive-single.html %}
 {% endfor %}
