@@ -15,6 +15,6 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %}
 
-{% for post in site.workingpubs reversed %}
+{% for post in site.reviewpubs reversed %}
   {% include archive-single.html %}
 {% endfor %}

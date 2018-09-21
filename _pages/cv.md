@@ -51,12 +51,12 @@ Research and Training, Government of India
 Publications
 ======
 
-## Refereed Journal Articles
+### Refereed Journal Articles
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-## Journal Articles Under Peer Review
+### Journal Articles Under Peer Review
   <ul>{% for post in site.reviewpubs %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
