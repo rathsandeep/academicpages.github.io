@@ -50,12 +50,36 @@ Research and Training, Government of India
 
 Publications
 ======
+
+* **Refereed Journal Articles**
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+* **Journal Articles Under Peer Review**
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+* **Work in Progress**
+  <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+* **Other Articles**
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 Talks
 ======
+* **Refereed Conference Presentations**
+
+    * *Staff Planning for Anesthesiologists*
+    * MSOM Annual Meeting, Dallas, 2018
+    
+
+
 * **Non-refereed Conference Presentations**
 
   * *Staff Planning for Anesthesiologists*
@@ -84,18 +108,20 @@ Talks
 Teaching
 ======
   * Undergraduate Teaching
-    * Service Operations Management, 2018 *(scheduled)*
-    * Operations Management, 2017, 2018 *(scheduled)*
+    * Service Operations Management, 2018, 2019 *(scheduled)*
+    * Operations Management, 2017, 2018, 2019 *(scheduled)*
 
 Service and leadership
 ======
 * To the discipline
   * Ad-Hoc Reviewer
     * Manufacturing & Service Operations Management
+    * Management Science
+    * California Management Review
   * Judge
     * POMS CHOM Best Paper Competition, 2017
   * Session Chair
-    * INFORMS Annual Meetings 2015, 2017
+    * INFORMS Annual Meetings 2015, 2017, 2018 *(scheduled)*
     * INFORMS Healthcare 2015
 
 Memberships
