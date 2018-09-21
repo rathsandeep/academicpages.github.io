@@ -56,20 +56,16 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-## Journal Articles Under Peer Review**
+## Journal Articles Under Peer Review
   <ul>{% for post in site.reviewpubs %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 ## Work in Progress
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  
 
 ## Other Articles
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  
 
 Talks
 ======
