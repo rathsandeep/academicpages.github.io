@@ -16,11 +16,15 @@ author_profile: true
 ## Peer Reviewed Journal Articles
 
  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
+    {% include archive.html %}
   {% endfor %}</ul>
 
 
 ## Journal Articles Under Review
+
+ <ul>{% for post in site.publications %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
 
 
 ## Other Articles
