@@ -22,7 +22,7 @@ author_profile: true
 
 ## Journal Articles Under Review
 
- <ul>{% for post in site.publications %}
+ <ul>{% for post in site.reviewpubs %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
