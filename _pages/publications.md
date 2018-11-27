@@ -16,7 +16,7 @@ author_profile: true
 ## Peer Reviewed Journal Articles
 
  <ul>{% for post in site.publications %}
-    {% include archive.html %}
+    {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 
