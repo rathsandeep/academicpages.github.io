@@ -11,12 +11,13 @@ author_profile: true
 
 {% include base_path %}
 
-# Peer Reviewed Journal Articles
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+# Publications
 
-# Journal Articles Under Review
-{% for post in site.reviewpubs reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+## Peer Reviewed Journal Articles
+
+
+## Journal Articles Under Review
+
+
+## Other Articles
+

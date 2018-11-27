@@ -78,8 +78,11 @@ Talks
 
 * **Non-refereed Conference Presentations**
 
+  * *SCollaborative Care for Mental and Physical Health*
+    * INFORMS Annual Meeting, Phoenix, 2019 
+
   * *Staff Planning for Anesthesiologists*
-    * INFORMS Annual Meeting, Houston, 2018 *(scheduled)*
+    * INFORMS Annual Meeting, Houston, 2018 
     * INFORMS Annual Meeting, Nashville, 2016
 
   * *Integrated Staff and Room Scheduling for Surgeries*
