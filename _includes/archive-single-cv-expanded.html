@@ -37,7 +37,9 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
-    {% if post.excerpt%}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt }}</p> {% endif %}
+    {% if post.excerpt%}<p class="archive__item-excerpt" itemprop="description" align="justify">{{ post.excerpt }}</p> {% endif %}
+    {% if post.paperurl%}<p class="archive__item-excerpt" itemprop="description" align="justify"><a href="{{ post.paperurl}}">[Paper]</a></p> {% endif %}
+    {% if post.preprint%}<p class="archive__item-excerpt" itemprop="description" align="justify"><a href="{{ post.preprint}}">[Pre-print]</a></p> {% endif %}
     </li>
  </article>
 </div>
