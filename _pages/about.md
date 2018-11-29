@@ -16,3 +16,18 @@ In my research I design practical and implementable solutions which bring togeth
 <p align="justify">
 I teach Operations Management and Service Operations Management at the Kenan Flagler Business School.<br>
 </p>
+
+### Publication Summary
+
+## Peer Reviewed Journal Articles
+
+ <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv-expanded.html %}
+  {% endfor %}</ul>
+
+
+## Journal Articles Under Review
+
+ <ul>{% for post in site.reviewpubs reversed %}
+    {% include archive-single-cv-expanded.html %}
+  {% endfor %}</ul>
