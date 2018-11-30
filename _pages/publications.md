@@ -12,6 +12,13 @@ author_profile: true
 {% include base_path %}
 
 
+## Journal Articles Under Review
+
+ <ul>{% for post in site.reviewpubs reversed %}
+    {% include archive-single-cv-expanded.html %}
+  {% endfor %}</ul>
+
+
 
 ## Peer Reviewed Journal Articles
 
@@ -20,12 +27,5 @@ author_profile: true
   {% endfor %}</ul>
 
 
-## Journal Articles Under Review
 
- <ul>{% for post in site.reviewpubs reversed %}
-    {% include archive-single-cv-expanded.html %}
-  {% endfor %}</ul>
-
-
-## Other Articles
 
