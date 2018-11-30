@@ -27,11 +27,9 @@
       </div>
     {% endif %}
     <h3 class="archive__item" itemprop="headline">
-      
       {{ post.citation }}
       {% if post.paperurl%}<a href="{{ post.paperurl}}">[Paper]</a>{% endif %}
       {% if post.preprint%}<a href="{{ post.preprint}}">[Pre-print]</a>{% endif %}
-      {% endif %}
     </h3>
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
