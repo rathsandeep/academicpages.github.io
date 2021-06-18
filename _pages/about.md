@@ -24,7 +24,7 @@ I teach Operations Management and Service Operations Management at the Kenan Fla
 Peer-Reviewed Journal Articles
 ------------------------------
 
--   Wood, B. C., Konchan, S., Gay, **S., Rath**, S., Deshpande, V., & Knowles, M. (2021). Data Analysis of Plastic Surgery Instrument Trays Yields Significant Cost Savings and Efficiency Gains. *Annals of Plastic Surgery*, 86(6S), S635-S639. (5 pages)
+-   Wood, B. C., Konchan, S., Gay, **S., Rath**, S., Deshpande, V., & Knowles, M. (2021). Data Analysis of Plastic Surgery Instrument Trays Yields Significant Cost Savings and Efficiency Gains. *Annals of Plastic Surgery*, 86(6S), S635-S639. (5 pages) [Link to paper](https://journals.lww.com/annalsplasticsurgery/Fulltext/2021/06005/Data_Analysis_of_Plastic_Surgery_Instrument_Trays.36.aspx?context=LatestArticles&casa_token=wjQA8par0B0AAAAA:e3EBF8Op9EiLROKEFMv5xsCY8h4tWiDNSrgnpzWKLeLnzglUSCpMxLC1aNozp8o-xT7Zfe4R8BslxmzvaxpisGHp)
 
 -   Knowles, M., Gay, S.S., Konchan, S.K., Mendes, R., **Rath, S.**, Deshpande, V., Farber, M.A. and Wood, B.C., (2020). Data Analysis of Vascular Surgery Instrument Trays Yields Large Cost and Efficiency Savings. *Journal of Vascular Surgery*, 71(1), pp.e15-e16 (10 pages).
 
