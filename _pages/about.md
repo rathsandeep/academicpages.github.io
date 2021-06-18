@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 <p align="justify">
-I am an Assistant Professor of Operations Management at the Kenan-Flagler Business School, University of North Carolina at Chapel Hill. <br>
+I am an Assistant Professor of Operations Management at the Kenan-Flagler Business School, The University of North Carolina at Chapel Hill. <br>
 </p>
 <p align="justify">
-In my research I design practical and implementable solutions which bring together operational and clinical data to aid hospital managers in their resource planning decisions. My research has been associated with major healthcare organizations such as the Veterans Health Administration and the UCLA Ronald Reagan Medical Center.  I obtained my PhD in Management from UCLA Anderson School of Management.<br>
+In my research, I design practical and implementable solutions which bring together operational and clinical data to aid hospital managers in their resource planning decisions. My research has been associated with major healthcare organizations such as the Veterans Health Administration and the UCLA Ronald Reagan Medical Center.  I obtained my Ph.D. in Management from UCLA Anderson School of Management.<br>
 </p>
 <p align="justify">
 I teach Operations Management and Service Operations Management at the Kenan Flagler Business School.<br>
@@ -36,7 +36,6 @@ Non Peer-Reviewed Articles
 --------------------------
 
 -   Rajaram, K., & **Rath, S.** (2017). Managing the Operating Room Suite at UCLA Ronald Reagan Medical Center. *Impact*, 3(2), 31-35. \[[Link to paper](https://pubsonline.informs.org/doi/abs/10.1287/opre.2015.1353)\]
-)
 
 
 Articles Under Review
@@ -45,7 +44,7 @@ Articles Under Review
 -   Deshpande V., Mundru N., **Rath, S.**, Knowles M., Rowe D., Wood B.C., Data-Driven Surgical Tray Optimization to Improve Operating Room Efficiency *Under Review at Operations Research* (35 pages).
 
 
--   **Rath, S.** and Rajaram, K., Staff Planning for Hospitals with Cost Estimation and Optimization *Under review at Production & Operations Management* (31 pages).\[[Link to working paper]((https://privpapers.ssrn.com/sol3/papers.cfm?abstract_id=3241063)\]
+-   **Rath, S.** and Rajaram, K., Staff Planning for Hospitals with Cost Estimation and Optimization *Under review at Production & Operations Management* (31 pages).\[[Link to working paper](https://privpapers.ssrn.com/sol3/papers.cfm?abstract_id=3241063)\]
 
 Working Paper
 -------------
