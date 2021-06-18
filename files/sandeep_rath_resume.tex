@@ -1,276 +1,369 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+% LaTeX Curriculum Vitae Template
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
 
+\documentclass[11pt,a4paper]{article}
 
-\documentclass[11pt,a4paper]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{xcolor}
 
-% moderncv themes
-\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\newcommand{\updateinfo}[1][\today]{\par\vfill\hfill{\scriptsize\color{gray}Last updated on #1}}
 
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
-
-% adjust the page margins
-\usepackage[scale=0.8]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \usepackage{fancyhdr}
-\renewcommand*{\addresssymbol}       {}
-\renewcommand*{\mobilephonesymbol}   {}
-\renewcommand*{\fixedphonesymbol}    {}
-\renewcommand*{\faxphonesymbol}      {}
-\renewcommand*{\emailsymbol}         {}
-\renewcommand*{\homepagesymbol}      {}
-\renewcommand*{\linkedinsocialsymbol}{}
-\renewcommand*{\twittersocialsymbol} {}
-\renewcommand*{\githubsocialsymbol}  {}
 
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+\usepackage[none]{hyphenat}
 
-\usepackage{xpatch}
-\xpatchcmd{\cvitemwithcomment}{\bfseries}{\mdseries}{}{}
-\xpatchcmd{\cvitemwithcomment}{\bfseries}{\mdseries}{}{}
-\xpatchcmd{\cventry}{\bfseries}{\mdseries}{}{}
-
-%\makeatletter
-%\RenewDocumentCommand{\section}{sm}{%
-%  \strut\sectionstyle{#2\hfill}%
-%  \par\nobreak\addvspace{1.5ex}\@afterheading
-%  }
-%
-%\RenewDocumentCommand{\subsection}{sm}{
-%  \strut\subsectionstyle{#2}{\color{color1}{\subsectionfill}}%
-%  \par\nobreak\addvspace{1.5ex}\@afterheading}
-%%
-%\makeatother
-
-\makeatletter
-\RenewDocumentCommand{\section}{sm}{%
-  \par\addvspace{1cm}%
-  \phantomsection{}% reset the anchor for hyperrefs
-  \addcontentsline{toc}{section}{#2}%
- % \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{0.95ex}}}%
-  \hspace{\separatorcolumnwidth}%
-  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
-  \par\nobreak\addvspace{1.5ex}\@afterheading}% to avoid a pagebreak after the heading
-\makeatother
+% Set your name here
+\def\name{Sandeep Rath}
 
 
 
-% personal data
-\name{Sandeep}{Rath}
-%\title{Curriculum vitae}                               % optional, remove / comment the line if not wanted
-\address{McColl 4705}{CB\# 3490}{Chapel Hill, NC, 27599}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
-\phone[mobile]{Phone: +1~(919)~962~3818}                   % optional, remove / comment the line if not wanted
-%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
-%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
-\email{e-mail: sandeep@unc.edu}    
-%\extrainfo{alternate e-mail: rathsandeep@gmail.com}  
-                        % optional, remove / comment the line if not wanted
-%\homepage{www.sandeeprath.com}                         % optional, remove / comment the line if not wanted
-                % optional, remove / comment the line if not wanted
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
-
-% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
-%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
-
-% bibliography with mutiple entries
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
-\begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
-\makecvtitle
-\vspace{-5ex}
-\section{{Education}}
-\cventry{2011--2016}{Ph.D. Management}{UCLA Anderson School of Management}{June 2016}{}{}
-\cventry{2001--2006}{Dual Degree: B.Tech. (Electrical Engineering) \& M.Tech. (Instrumentation Engineering)}{I.I.T., Kharagpur}{July 2006}{}{}{}{}  % arguments 3 to 6 can be left empty
-%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-\section{Professional Experience}
-%\subsection{Vocational}
-\cventry{2016-Present}{Assistant Professor}{Kenan-Flagler Business School, University of North Carolina}{Chapel Hill}{}{}
-\cventry{2012--2016}{Teaching Assistant}{UCLA Anderson School of Management}{Los Angeles}{}{}
-\cventry{2010--2011}{Research Associate}{Indian School of Business}{Hyderabad}{}{}
-%\subsection{Miscellaneous}
-\cventry{2008--2010}{Business Analyst}{Schlumberger Ltd.}{Pune}{}{}
-\cventry{2006--2007}{Assistant Manager}{ITC Ltd.}{Chennai}{}{}
-\section{Honors}
-\cvitem{2015-2016}{UCLA Dissertation Year Fellowship}
-\cvitem{2011-2015}{UCLA Anderson Doctoral Fellowship}
-\cvitem{2005-2006}{Fellowship for Post Graduate Studies, Ministry of Human Resource Development, Government of India }
-\cvitem{1999-2005}{National Talent Search Examination Scholarship, National Council of Educational Research and Training, Government of India}
-%\section{PhD Thesis}
-%\cvitem{Title}{{Resource Planning Models for Healthcare Organizations}}
-%\cvitem{Advisor}{Prof. Kumar Rajaram}
-%\cvitem{description}{Short thesis abstract}
-\section{Refereed Journal Articles}
-\cvitem{}{\textbf{Rath, S.}, Rajaram, K., Mahajan, A., Integrated Anesthesiologist and Room Scheduling for Surgeries: Methodology and Application. {forthcoming in \emph{Operations Research}} (36 pages)}{}
-\cvitem{}{Deo, S., Rajaram, K., \textbf{Rath, S.}, Karmarkar, U. S., \& Goetz, M. B. (2015). Planning for HIV Screening, Testing, and Care at the Veterans Health Administration. \emph{Operations Research}, 63(2), 287-304 (18 pages)}
-
-%\section{Journal Articles Under Peer Review}
-\newpage
-\section{Research Presentations}
-
-\subsection{\textbf{Non-Refereed Conference Presentations}}
-\cvitem{}{\emph{Staff Planning For Anesthesiologists }}
-\cvitem{2017}{INFORMS Annual Meeting, Houston \emph{(scheduled)}}
-\cvitem{2016}{INFORMS Annual Meeting, Nashville}
-\cvitem{}{\emph{Integrated Staff and Room Scheduling for Surgeries}}
-\cvitem{2017}{INFORMS Healthcare, Rotterdam \emph{(scheduled)}}
-\cvitem{2016}{INFORMS Annual Meeting, Nashville}
-\cvitem{2015}{INFORMS Annual Meeting, Philadelphia}
-\cvitem{2015}{INFORMS Healthcare, Nashville }
-\cvitem{}{\emph{Planning for HIV Screening, Testing and Care}}
-\cvitem{2014}{INFORMS Annual Meeting, San Francisco}
-
-\cvitem{}{}
-\subsection{\textbf{Other Invited Presentations}}
-\cvitem{}{\emph{Integrated Staff and Room Scheduling for Surgeries}}
-\cvitem{2015}{Kenan-Flagler Business School, University of North Carolina, Chapel-Hill}
-\cvitem{2015}{Communication, Networks and Systems Seminar, University of Southern California}
-\cvitem{2015}{Southern California OR/OM Day, Los Angeles}
-\cvitem{}{\emph{Planning for HIV Screening, Testing and Care}}
-\cvitem{2015}{DOTM Colloquium Series, UCLA Anderson}
-\section{Teaching Record}
-\cvitem{Spring 2017}{{Operations Management, Undergraduate}}
-%\cvitem{2015}{Teaching Assistant for Operations Management, Executive MBA, \mbox{UCLA Anderson School of Management}}
-%\cvitem{2012-2015}{Teaching Assistant for Operations Management, Fully Employed MBA, \mbox{UCLA Anderson School of Management}}
-%\cvitem{2005-2006}{Teaching Assistant for Basics in Electrical Engineering}
-
-
-
-
-\section{Professional Service}
-\subsection{\textbf{To the Discipline}}
-\subsection{\emph{Ad-Hoc Reviewer}}
-\cvitem{}{Manufacturing \& Service Operations Management}
-\subsection{\emph{Judge}}
-\cvitem{}{POMS CHOM Best Paper Competition, 2017}
-\subsection{\emph{Session Chair}}
-\cvitem{}{INFORMS Annual Meetings 2015, 2017}
-\cvitem{}{INFORMS Healthcare 2015}
-
-
-\section{Memberships}
-\cvitem{2012-Present}{Member, Institute for Operations Research and Management Science (INFORMS)}
-
+\fancyhf{}
 \cfoot{ Last updated: \today }
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+%\def\footerlink{http://jblevins.org/projects/cv-template/}
 
-%\section{Master thesis}
-%\cvitem{title}{\emph{Title}}
-%\cvitem{supervisors}{Supervisors}
-%\cvitem{description}{Short thesis abstract}
+% The following metadata will show up in the PDF properties
+\hypersetup{
+	colorlinks = true,
+	urlcolor = black,
+	pdfauthor = {\name},
+	pdfkeywords = {economics, statistics, mathematics},
+	pdftitle = {\name: Curriculum Vitae},
+	pdfsubject = {Curriculum Vitae},
+	pdfpagemode = UseNone
+}
 
-%\section{Experience}
-%\subsection{Vocational}
-%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
-%Detailed achievements:%
-%\begin{itemize}%
-%\item Achievement 1;
-%\item Achievement 2, with sub-achievements:
-%  \begin{itemize}%
-%  \item Sub-achievement (a);
-%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
-%    \begin{itemize}
-%    \item Sub-sub-achievement i;
-%    \item Sub-sub-achievement ii;
-%    \item Sub-sub-achievement iii;
-%    \end{itemize}
-%  \item Sub-achievement (c);
-%  \end{itemize}
-%\item Achievement 3.
-%\end{itemize}}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
-%\subsection{Miscellaneous}
-%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
-%
-%\section{Languages}
-%\cvitemwithcomment{Language 1}{Skill level}{Comment}
-%\cvitemwithcomment{Language 2}{Skill level}{Comment}
-%\cvitemwithcomment{Language 3}{Skill level}{Comment}
-%
-%\section{Computer skills}
-%\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
-%\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
-%
-%\section{Interests}
-%\cvitem{hobby 1}{Description}
-%\cvitem{hobby 2}{Description}
-%\cvitem{hobby 3}{Description}
-%
-%\section{Extra 1}
-%\cvlistitem{Item 1}
-%\cvlistitem{Item 2}
-%\cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
-%
-%\section{Extra 2}
-%\cvlistdoubleitem{Item 1}{Item 4}
-%\cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
-%\cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
-%
-%\section{References}
-%\begin{cvcolumns}
-%  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
-%  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
-%  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
-%\end{cvcolumns}
+\geometry{
+	body={6.5in,10in},
+	left=1.0in,
+	top=1in
+}
 
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
 
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
 
-%\clearpage
-%%-----       letter       ---------------------------------------------------------
-%% recipient data
-%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-%\date{January 01, 1984}
-%\opening{Dear Sir or Madam,}
-%\closing{Yours faithfully,}
-%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-%\makelettertitle
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+	\begin{list}{}{
+			\setlength{\leftmargin}{1.5em}
+		}
+	}{
+\end{list}
+}
+
+\begin{document}
+
+	% Place name at left
+	{\huge \name}
+
+	% Alternatively, print name centered and bold:
+	%\centerline{\huge \bf \name}
+
+	\vspace{0.25in}
+
+	\begin{minipage}{0.45\linewidth}
+		\href{http://www.unc.edu/}{
+			Kenan Flagler Business School\\
+			University of North Carolina} \\
+		McColl 4705 \\
+		CB\# 3490 \\
+		Chapel Hill, NC 27599
+	\end{minipage}
+	\begin{minipage}{0.45\linewidth}
+		\begin{tabular}{ll}
+			Phone: & (919) 962-3818 \\
+			Fax: &  (919) 962-6949 \\
+			Email: & \href{mailto:sandeep@unc.edu}{\tt sandeep@unc.edu} \\
+			Homepage: & \href{https://rathsandeep.github.io/}{\tt rathsandeep.github.io}\\
+		\end{tabular}
+	\end{minipage}
+
+
+	%\section*{Personal}
+
+	%\begin{itemize}
+	%\item Born on September 29, 1895.
+	%\item United States Citizen.
+	%\end{itemize}
+
+
+	\section*{\textbf{Education}}
+
+	\begin{itemize}
+		\item \textbf{UCLA Anderson School of Management, Los Angeles}
+		\begin{itemize}
+			\item Ph.D. Management,  June, 2016.
+			\item \emph{Dissertation Title}: Resource Planning Models for Healthcare Organizations.
+			\item \emph{Dissertation committee}: Kumar Rajaram (chair), Felipe Caro, Uday Karmarkar, {Aman Mahajan}.
+		\end{itemize}
+		\item \textbf{Indian Institute of Technology, Kharagpur}
+		\begin{itemize}
+			\item M.Tech. Instrumentation Engineering, 2006.
+			\item B.Tech. Electrical Engineering, 2006.
+			\item Minor, Electronics and Telecommunication Engineering.
+		\end{itemize}
+
+
+
+
+	\end{itemize}
+
+
+	\section*{\textbf{Professional Experience}}
+
+	\begin{itemize}
+		\item \textbf{Kenan-Flagler Business School, University of North Carolina at Chapel Hill}
+
+		\begin{itemize}
+			\item Assistant Professor, 2016--present.
+		\end{itemize}
+		\item \textbf{UCLA Anderson School of Management, Los Angeles}
+
+		\begin{itemize}
+			\item Teaching Assistant, Fall Quarters of 2012--2016.
+		\end{itemize}
+
+		\item \textbf{Indian School of Business, Hyderabad}
+
+		\begin{itemize}
+			\item Research Associate, 2010--2011.
+		\end{itemize}
+
+
+		\item \textbf{Schlumberger Ltd., Pune}
+		\begin{itemize}
+			\item Business Analyst,  2008--2009
+			\item Manufacturing Engineer, 2007--2008.
+		\end{itemize}
+		\item \textbf{ITC Ltd., Chennai}
+
+		\begin{itemize}
+			\item Assistant Under Training, 2006--2007.
+		\end{itemize}
+
+	\end{itemize}
+
+	\section*{\textbf{Honors}}
+
+	\begin{itemize}
+		\item UCLA Dissertation Year Fellowship, 2015--2016.
+		\item UCLA Anderson Doctoral Fellowship, 2011--2015.
+		\item Fellowship for Post Graduate Studies, Government of India,  2005--2006.
+		\item National Talent Search Examination Scholarship, Government of India, 1999--2005.
+	\end{itemize}
+
+
+	\section*{\textbf{Publications}}
+
+	\subsection*{Peer-Reviewed Journal Articles}
+
+	\begin{itemize}
+		\item Wood, B. C., Konchan, S., Gay, \textbf{S., Rath}, S., Deshpande, V., \& Knowles, M. (2021). Data Analysis of Plastic Surgery Instrument Trays Yields Significant Cost Savings and Efficiency Gains. \emph{Annals of Plastic Surgery}, 86(6S), S635-S639. (5 pages)
+		\item Knowles, M., Gay, S.S., Konchan, S.K., Mendes, R., \textbf{Rath, S.}, Deshpande, V., Farber, M.A. and Wood, B.C., (2020). Data Analysis of Vascular Surgery Instrument Trays Yields Large Cost and Efficiency Savings. \emph{Journal of Vascular Surgery}, 71(1), pp.e15-e16 (10 pages).
+		\item \textbf{Rath, S.}, Rajaram, K., \& Mahajan, A. (2017). Integrated Anesthesiologist and Room Scheduling for Surgeries: Methodology and Application. \emph{Operations Research}, 65(6), 1460-1478. \mbox{(18 pages)}.
+		\item Deo, S., Rajaram, K., \textbf{Rath, S.}, Karmarkar, U. S., \& Goetz, M. B. (2015). Planning for HIV Screening, Testing, and Care at the Veterans Health Administration. \emph{Operations Research}, 63(2), 287-304 (18 pages).
+	\end{itemize}
+\subsection*{Non Peer-Reviewed Articles}
+
+\begin{itemize}
+	\item Rajaram, K., \& \textbf{Rath, S.} (2017). Managing the Operating Room Suite at UCLA Ronald Reagan Medical Center. \emph{Impact}, 3(2), 31-35.
+\end{itemize}
+\subsection*{Articles Under Review}
+\begin{itemize}
+	\item Deshpande V., Mundru N., \textbf{Rath, S.}, Knowles M., Rowe D., Wood B.C.,  Data-Driven Surgical Tray Optimization to Improve Operating Room Efficiency \emph{Under Review at Operations Research} (35 pages)
+	\item \textbf{Rath, S.} and Rajaram, K.,  Staff Planning for Hospitals with Cost Estimation and
+	Optimization \emph{Under  review at Production \& Operations  Management} (31 pages).
+\end{itemize}
+
+\subsection*{Working Paper}
+\begin{itemize}
+	\item \textbf{Rath, S.}, Swaminathan, J.M., Coleman C., Collaborative Care for Mental and Physical Health \emph{Preparing to submit to Operations Research} (34 pages)
+
+\end{itemize}
+
+\subsection*{Work in Progress}
+
+\begin{itemize}
+
+	\item Celik U., Kesavan S.,  \textbf{Rath, S.}, Staats B., Operational Impact of Physician Electronic Health Record Use
+\end{itemize}
+
+%	\subsection*{Other Published Articles}
 %
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%	\begin{itemize}
+%		\item Rajaram, K., \& \textbf{Rath, S.} (2017). Managing the Operating Room Suite at UCLA Ronald Reagan Medical Center. Impact, 3(2), 31-35.
+%	\end{itemize}
+
+
+	\section*{\textbf{Teaching Record}}
+
+	\begin{itemize}
+		\item\textbf{ BSBA Program, Kenan-Flagler Business School, University of North
+			Carolina}
+		\begin{itemize}
+			\item BUSI 403: Operations Management, Undergraduate Core, \emph{Spring 2017-2021 }
+
+%			\begin{itemize}
+%%				\item \emph{Spring 2019}: In progress
+%%				\item \emph{Spring 2018}: Instructor Rating 4.58/5, 4.71/5
+%%				\item \emph{Spring 2017}: Instructor Rating 4.79/5, 4.69/5
 %
-%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
-%
-%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-%
-%Albert Einstein discovered that $e=mc^2$ in 1905.
-%
-%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-%
-%\makeletterclosing
-%
-%%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+%			\end{itemize}
+
+
+			\item BUSI 532H: Service Operations, Undergraduate Elective, \emph{Spring 2018-2021}
+%			\begin{itemize}
+%				\item \emph{Spring 2019}: In progress
+%				\item \emph{Spring 2018}: Instructor Rating 4.82/5
+%			\end{itemize}
+		\end{itemize}
+
+	\end{itemize}
+
+
+
+
+
+	\section*{\textbf{Peer-Reviewed Conference Presentations}}
+	\begin{itemize}
+
+		\item \emph{Collaborative Care for Mental and Physical Health}
+			\begin{itemize}
+			\item Manufacturing \& Service Operations Management Conference, 2021.
+		\end{itemize}
+		\item \emph{Staff Planning for Hospitals with Cost Estimation and
+			Optimization}
+		\begin{itemize}
+			\item Manufacturing \& Service Operations Management Conference, 2019.
+			\item Manufacturing \& Service Operations Management Conference, 2018.
+
+		\end{itemize}
+	\end{itemize}
+	\section*{\textbf{Invited Conference Presentations}}
+	\begin{itemize}
+		\item \emph{Appointment Scheduling with Off-line Discretionary Work}
+		\begin{itemize}
+			\item INFORMS Annual Meeting, Anaheim 2021 (\emph{scheduled}).
+		\end{itemize}
+		\item \emph{Collaborative Care for Mental and Physical Health}
+		\begin{itemize}
+			\item POMS, Online, 2021
+			\item INFORMS Annual Meeting, Seattle, 2019.
+			\item INFORMS Healthcare, Boston, 2019.
+			\item INFORMS Annual Meeting, Phoenix 2018.
+		\end{itemize}
+		\item \emph{Staff Planning For Anesthesiologists}
+		\begin{itemize}
+			%\item INFORMS Annual Meeting, Phoenix 2018 (presented by co-author).
+			\item INFORMS Annual Meeting, Seattle, 2019.
+			\item INFORMS Healthcare, Boston, 2019.
+			\item INFORMS Annual Meeting, Houston, 2017.
+			\item  INFORMS Annual Meeting, Nashville, 2016.
+		\end{itemize}
+		\item \emph{Integrated Staff and Room Scheduling for Surgeries}
+		\begin{itemize}
+			\item INFORMS Healthcare, Rotterdam, 2017.
+			\item INFORMS Annual Meeting, Nashville, 2016.
+			\item INFORMS Annual Meeting, Philadelphia, 2015.
+			\item INFORMS Healthcare, Nashville, 2015.
+		\end{itemize}
+		\item \emph{Planning for HIV Screening, Testing, and Care}
+		\begin{itemize}
+			\item INFORMS Annual Meeting, San Francisco, 2014.
+		\end{itemize}
+	\end{itemize}
+	\section*{\textbf{Other Invited Presentations}}
+
+
+	\begin{itemize}
+		\item \emph{Collaborative Care for Mental and Physical Health}
+
+		\begin{itemize}
+			\item Consortium Friday Seminar Series by Indiana University (online), 2021
+			\item UNC Business of Healthcare Convocation, Chapel Hill, 2019
+		\end{itemize}
+
+		\item\emph{ Integrated Staff and Room Scheduling for Surgeries}
+		\begin{itemize}
+			\item Kenan-Flagler Business School, University of North Carolina, Chapel-Hill, 2015.
+			\item Communication, Networks and Systems Seminar, University of Southern California, 2015.
+			\item Southern California OR/OM Day, Los Angeles, 2015.
+		\end{itemize}
+		\item \emph{Planning for HIV Screening, Testing and Care}
+		\begin{itemize}
+			\item DOTM Colloquium Series, UCLA Anderson, 2015.
+		\end{itemize}
+	\end{itemize}
+
+
+
+	\section*{\textbf{Professional Service}}
+	\subsection*{To the Discipline}
+	\begin{itemize}
+		\item \textbf{Reviewer}
+		\begin{itemize}
+
+			\item California Management Review, IISE Transactions,  Management Science, Manufacturing \& Service Operations Management, Naval Research Logistics, Operations Research, Production and Operations Management %(h-index: 209), Number of papers reviewed: 1
+
+
+		\end{itemize}
+		\item \textbf{Judge}
+		\begin{itemize}
+			\item MSOM Conference Healthcare SIG, 2021
+			\item Pierskalla Best Paper Award, 2020
+			\item POMS College of Healthcare Operations Management, Best Paper Competition, 2017, 2020, 2021.
+		\end{itemize}
+		\item \textbf{Conference Session Chair}
+		\begin{itemize}
+			\item INFORMS Annual Meetings: Anaheim (2021, \emph{scheduled}), Seattle (2019), Phoenix (2018, co-chair with Jayashankar  Swaminathan), Houston (2017), Philadelphia (2015)
+			\item INFORMS Healthcare: Boston (2019), Nashville (2015)
+			\end{itemize}
+
+	\end{itemize}
+	\subsection*{Within UNC Chapel Hill}
+	\begin{itemize}
+		\item Organizing Committee Member, UNC Healthcare Operations Workshop, 2019
+		\item Operations Area Faculty Seminar Series, Chair, 2017-2019.
+		\item Organizing Committee Member, Manufacturing \& Service Operations Management Conference, 2017.
+	\end{itemize}
+%	\section*{Memberships}
+%	\begin{itemize}
+%		\item Member, Institute for Operations Research and Management Science (INFORMS), 2012--present.
+%	\end{itemize}
+	% Footer
+	\updateinfo[\today]
+
 \end{document}
-
-
-%% end of file `template.tex'.
