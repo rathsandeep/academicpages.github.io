@@ -11,7 +11,7 @@ redirect_from:
 I am an Assistant Professor of Operations Management at the Kenan-Flagler Business School, The University of North Carolina at Chapel Hill. <br>
 </p>
 <p align="justify">
-In my research, I design practical and implementable solutions which bring together operational and clinical data to aid hospital managers in their resource planning decisions. My research has been associated with major healthcare organizations such as the Veterans Health Administration and the UCLA Ronald Reagan Medical Center.  I obtained my Ph.D. in Management from UCLA Anderson School of Management.<br>
+In my research, I design practical and implementable solutions which bring together operational and clinical data to aid hospital managers in their resource planning decisions. My research has been associated with major healthcare organizations such as the Veterans Health Administration, UCLA Ronald Reagan Medical Center and UNC Healthcare.  I obtained my Ph.D. in Management from UCLA Anderson School of Management in 2016.<br>
 </p>
 <p align="justify">
 I teach Operations Management and Service Operations Management at the Kenan Flagler Business School.<br>
