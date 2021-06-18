@@ -21,8 +21,8 @@ I teach Operations Management and Service Operations Management at the Kenan Fla
 
 
 
-Peer-Reviewed Journal Articles
-------------------------------
+### Peer-Reviewed Journal Articles
+
 
 -   Wood, B. C., Konchan, S., Gay, **S., Rath**, S., Deshpande, V., & Knowles, M. (2021). Data Analysis of Plastic Surgery Instrument Trays Yields Significant Cost Savings and Efficiency Gains. *Annals of Plastic Surgery*, 86(6S), S635-S639. (5 pages) \[[Link to paper](https://journals.lww.com/annalsplasticsurgery/Fulltext/2021/06005/Data_Analysis_of_Plastic_Surgery_Instrument_Trays.36.aspx?context=LatestArticles&casa_token=wjQA8par0B0AAAAA:e3EBF8Op9EiLROKEFMv5xsCY8h4tWiDNSrgnpzWKLeLnzglUSCpMxLC1aNozp8o-xT7Zfe4R8BslxmzvaxpisGHp)\]
 
@@ -32,27 +32,27 @@ Peer-Reviewed Journal Articles
 
 -   Deo, S., Rajaram, K., **Rath, S.**, Karmarkar, U. S., & Goetz, M. B. (2015). Planning for HIV Screening, Testing, and Care at the Veterans Health Administration. *Operations Research*, 63(2), 287-304 (18 pages). \[[Link to paper](https://pubsonline.informs.org/doi/abs/10.1287/opre.2015.1353)\]
 
-Non Peer-Reviewed Articles
---------------------------
+### Non Peer-Reviewed Articles
+
 
 -   Rajaram, K., & **Rath, S.** (2017). Managing the Operating Room Suite at UCLA Ronald Reagan Medical Center. *Impact*, 3(2), 31-35. \[[Link to paper](https://pubsonline.informs.org/doi/abs/10.1287/opre.2015.1353)\]
 
 
-Articles Under Review
----------------------
+### Articles Under Review
+
 
 -   Deshpande V., Mundru N., **Rath, S.**, Knowles M., Rowe D., Wood B.C., Data-Driven Surgical Tray Optimization to Improve Operating Room Efficiency *Under Review at Operations Research* (35 pages).
 
 
 -   **Rath, S.** and Rajaram, K., Staff Planning for Hospitals with Cost Estimation and Optimization *Under review at Production & Operations Management* (31 pages).\[[Link to working paper](https://privpapers.ssrn.com/sol3/papers.cfm?abstract_id=3241063)\]
 
-Working Paper
--------------
+### Working Paper
+
 
 -   **Rath, S.**, Swaminathan, J.M., Coleman C., Collaborative Care for Mental and Physical Health *Preparing to submit to Operations Research* (34 pages)
 
-Work in Progress
-----------------
+### Work in Progress
+
 
 -   Celik U., Kesavan S., **Rath, S.**, Staats B., Operational Impact of Physician Electronic Health Record Use
 
