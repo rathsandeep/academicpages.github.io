@@ -25,7 +25,13 @@ I teach Operations Management and Service Operations Management at the Kenan Fla
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-### Peer Reviewed Journal Articles
+### Working Papers
+
+ <ul>{% for post in site.reviewpubs reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
+### Peer-Reviewed Journal Articles
 
  <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
