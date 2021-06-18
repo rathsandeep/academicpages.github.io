@@ -19,7 +19,7 @@ I teach Operations Management and Service Operations Management at the Kenan Fla
 
 ## Publication Summary
 
-### Journal Articles Under Review
+
 
 Peer-Reviewed Journal Articles
 ------------------------------
