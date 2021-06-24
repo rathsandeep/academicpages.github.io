@@ -41,7 +41,7 @@ I teach Operations Management and Service Operations Management at the Kenan Fla
 ### Articles Under Review
 
 
--   Deshpande V., Mundru N., Rath, S., Knowles M., Rowe D., Wood B.C., Data-Driven Surgical Tray Optimization to Improve Operating Room Efficiency *Under Review at Operations Research* (35 pages).
+-   Deshpande V., Mundru N., Rath, S., Knowles M., Rowe D., Wood B.C., Data-Driven Surgical Tray Optimization to Improve Operating Room Efficiency *Under Review at Operations Research* (35 pages).\[[Link to working paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3866226)\]
 
 
 -   Rath, S. and Rajaram, K., Staff Planning for Hospitals with Cost Estimation and Optimization *Under review at Production & Operations Management* (31 pages).\[[Link to working paper](https://privpapers.ssrn.com/sol3/papers.cfm?abstract_id=3241063)\]
